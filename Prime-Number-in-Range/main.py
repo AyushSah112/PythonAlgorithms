@@ -5,13 +5,7 @@ prime number in a range
 def intro() :
     print("Welcome to Prime Number in a Range")
     
-def body() :
-    a = input("Enter your lower range(or 'quit') :  ")
-    if a.lower() == "quit":
-        return False
-    b = input("Enter your higher range(or 'quit') : ")
-    if b.lower() == "quit":
-        return False
+def primeCheck(a, b) :
     try:
         a = int(a)
         b = int(b)
@@ -19,6 +13,10 @@ def body() :
         print("Enter valid number")
         return True
     c = []
+    if a > b :
+        print("lower range should be smaller than higher range")
+        return True
+        
     for i in range(a, b+1) :
         if i < 2 :
             continue
@@ -27,9 +25,19 @@ def body() :
             if i%j == 0 :
                 prime = False
                 break
-        if prime :
+        if prime:
             c.append(i)
     print(f"Prime number: {c}")
+    return True
+    
+def body() :
+    a = input("Enter your lower range(or 'quit') :  ")
+    if a.lower() == "quit":
+        return False
+    b = input("Enter your higher range(or 'quit') : ")
+    if b.lower() == "quit":
+        return False
+    primeCheck(a, b)
     return True
     
 def main() :
