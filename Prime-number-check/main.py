@@ -22,9 +22,7 @@ def body() :
         elif p == 2 :
             print("It is a prime")
             return True
-        
         else :
-            
             prime = True 
             for i in range(2, int(p**0.5) + 1):
                 
