@@ -1,27 +1,20 @@
 Prime Number in a Range
 
-A simple Python program that finds all prime numbers within a user-defined range. The program keeps running until the user types "quit", making it easy to check multiple ranges without restarting.
+A simple Python program that finds all prime numbers between a given lower and upper range.
 
 Features
 
-- Find prime numbers between any two numbers.
-- Accepts custom lower and upper ranges.
-- Handles invalid numeric input.
-- Exit anytime by typing "quit".
-- Beginner-friendly and easy to understand.
+- Finds all prime numbers within the given range.
+- Handles invalid input using "try-except".
+- Allows the user to exit anytime by typing "quit".
+- Checks if the lower range is smaller than or equal to the higher range.
+- Ignores numbers less than "2".
 
 Concepts Used
 
 - Functions
 - Loops ("for", "while")
-- Nested loops
-- Conditional statements
+- Conditional Statements ("if", "else")
 - Lists
-- User input
-- "try-except" for error handling
-- Boolean flags ("True" / "False")
-- Program flow using "return"
-
-Output
-
-Displays a list of all prime numbers within the given range.
+- Exception Handling ("try-except")
+- User Input
