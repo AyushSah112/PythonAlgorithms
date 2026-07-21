@@ -1,5 +1,5 @@
 while True:
-    n = input("Enter a numher or 'quit': ")
+    n = input("Enter a number or 'quit': ")
     if n.lower() == 'quit':
         print("quiting....")
         break
